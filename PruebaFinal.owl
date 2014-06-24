@@ -1,0 +1,1088 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-6 "http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:untitled-ontology-6="http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology rdf:about="http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#abarca_a -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-6;abarca_a">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Estudiante10"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#contiene -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-6;contiene">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:range rdf:resource="&untitled-ontology-6;Estudiante10"/>
+        <rdfs:range rdf:resource="&untitled-ontology-6;Materia10"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Modulo_10"/>
+        <inverseOf rdf:resource="&untitled-ontology-6;es_contenida"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#es_contenida -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-6;es_contenida">
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Estudiante10"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia10"/>
+        <rdfs:range rdf:resource="&untitled-ontology-6;Modulo_10"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#es_impartida_por -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-6;es_impartida_por">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:range rdf:resource="&untitled-ontology-6;Docentes"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia10"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#imparte -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-6;imparte">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Docentes"/>
+        <rdfs:range rdf:resource="&untitled-ontology-6;Materia10"/>
+        <inverseOf rdf:resource="&untitled-ontology-6;es_impartida_por"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#pertenece_a -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-6;pertenece_a">
+        <rdfs:range rdf:resource="&untitled-ontology-6;Estudiante10"/>
+        <inverseOf rdf:resource="&untitled-ontology-6;abarca_a"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#duracion -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-6;duracion">
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia1.1"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia1.2"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia1.3"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia10.1"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia10.2"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia10.3"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia10.4"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia10.5"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia10.6"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia2.1"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia2.2"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia2.3"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia3.1"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia3.2"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia3.3"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia4.1"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia4.2"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia4.3"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia5.1"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia5.2"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia5.3"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia6.1"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia6.2"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia6.3"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia7.1"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia7.2"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia7.3"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia8.1"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia8.2"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia8.3"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia9.1"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia9.2"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia9.3"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#nombre -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-6;nombre">
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia1.1"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia1.2"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia1.3"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia10.1"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia10.2"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia10.3"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia10.4"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia10.5"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia10.6"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia2.1"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia2.2"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia2.3"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia3.1"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia3.2"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia3.3"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia4.1"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia4.2"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia4.3"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia5.1"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia5.2"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia5.3"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia6.1"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia6.2"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia6.3"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia7.1"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia7.2"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia7.3"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia8.1"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia8.2"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia8.3"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia9.1"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia9.2"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia9.3"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#peso -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-6;peso">
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia1.1"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia1.2"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia1.3"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia10.1"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia10.2"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia10.3"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia10.4"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia10.5"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia10.6"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia2.1"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia2.2"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia2.3"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia3.1"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia3.2"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia3.3"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia4.1"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia4.2"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia4.3"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia5.1"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia5.2"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia5.3"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia6.1"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia6.2"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia6.3"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia7.1"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia7.2"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia7.3"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia8.1"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia8.2"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia8.3"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia9.1"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia9.2"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-6;Materia9.3"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#AEIRNNR -->
+
+    <Class rdf:about="&untitled-ontology-6;AEIRNNR">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Areas"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Areas -->
+
+    <Class rdf:about="&untitled-ontology-6;Areas">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;UNL"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Carreras -->
+
+    <Class rdf:about="&untitled-ontology-6;Carreras">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;AEIRNNR"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Ciclos -->
+
+    <Class rdf:about="&untitled-ontology-6;Ciclos">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Sistemas"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-6;abarca_a"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-6;Malla_Actual"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-6;abarca_a"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-6;Malla_Antigua"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Docentes -->
+
+    <Class rdf:about="&untitled-ontology-6;Docentes">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Sistemas"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Electromecanica -->
+
+    <Class rdf:about="&untitled-ontology-6;Electromecanica">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Carreras"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Electronica -->
+
+    <Class rdf:about="&untitled-ontology-6;Electronica">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Carreras"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Estudiante1 -->
+
+    <Class rdf:about="&untitled-ontology-6;Estudiante1">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Modulo_1"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Estudiante10 -->
+
+    <Class rdf:about="&untitled-ontology-6;Estudiante10">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Modulo_10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Estudiante2 -->
+
+    <Class rdf:about="&untitled-ontology-6;Estudiante2">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Modulo_2"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-6;pertenece_a"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-6;Materia1.1"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Geologia -->
+
+    <Class rdf:about="&untitled-ontology-6;Geologia">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Carreras"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Malla_Actual -->
+
+    <Class rdf:about="&untitled-ontology-6;Malla_Actual">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Ciclos"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-6;pertenece_a"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-6;Ciclos"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Malla_Antigua -->
+
+    <Class rdf:about="&untitled-ontology-6;Malla_Antigua">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Ciclos"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-6;abarca_a"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-6;Modulo_8"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-6;abarca_a"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-6;Modulo_10"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-6;abarca_a"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-6;Modulo_7"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-6;abarca_a"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-6;Modulo_3"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-6;abarca_a"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-6;Modulo_4"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-6;abarca_a"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-6;Modulo_5"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-6;abarca_a"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-6;Modulo_9"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-6;abarca_a"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-6;Modulo_6"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-6;pertenece_a"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-6;Ciclos"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia1 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia1">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Modulo_1"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia1.1 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia1.1">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia1"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-6;abarca_a"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-6;Estudiante2"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia1.2 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia1.2">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia1"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia1.3 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia1.3">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia1"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia10 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia10">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Modulo_10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia10.1 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia10.1">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia10.2 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia10.2">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia10.3 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia10.3">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia10.4 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia10.4">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia10.5 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia10.5">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia10.6 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia10.6">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia10"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia2 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia2">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Modulo_2"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia2.1 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia2.1">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia2"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia2.2 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia2.2">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia2"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia2.3 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia2.3">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia2"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia3 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia3">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Modulo_3"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia3.1 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia3.1">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia3"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia3.2 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia3.2">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia3"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia3.3 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia3.3">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia3"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia4 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia4">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Modulo_4"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia4.1 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia4.1">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia4"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia4.2 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia4.2">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia4"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia4.3 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia4.3">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia4"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia5 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia5">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Modulo_5"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia5.1 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia5.1">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia5"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia5.2 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia5.2">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia5"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia5.3 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia5.3">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia5"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia6 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia6">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Modulo_6"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia6.1 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia6.1">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia6"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia6.2 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia6.2">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia6"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia6.3 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia6.3">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia6"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia7 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia7">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Modulo_7"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia7.1 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia7.1">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia7"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia7.2 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia7.2">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia7"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia7.3 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia7.3">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia7"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia8 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia8">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Modulo_8"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia8.1 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia8.1">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia8"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia8.2 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia8.2">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia8"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia8.3 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia8.3">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia8"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia9 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia9">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Modulo_9"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia9.1 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia9.1">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia9"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia9.2 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia9.2">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia9"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Materia9.3 -->
+
+    <Class rdf:about="&untitled-ontology-6;Materia9.3">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Materia9"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Modulo_1 -->
+
+    <Class rdf:about="&untitled-ontology-6;Modulo_1">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Malla_Actual"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Modulo_10 -->
+
+    <Class rdf:about="&untitled-ontology-6;Modulo_10">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Malla_Antigua"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-6;pertenece_a"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-6;Malla_Antigua"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Modulo_2 -->
+
+    <Class rdf:about="&untitled-ontology-6;Modulo_2">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Malla_Actual"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Modulo_3 -->
+
+    <Class rdf:about="&untitled-ontology-6;Modulo_3">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Malla_Antigua"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-6;pertenece_a"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-6;Malla_Antigua"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Modulo_4 -->
+
+    <Class rdf:about="&untitled-ontology-6;Modulo_4">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Malla_Antigua"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-6;pertenece_a"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-6;Malla_Antigua"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Modulo_5 -->
+
+    <Class rdf:about="&untitled-ontology-6;Modulo_5">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Malla_Antigua"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-6;pertenece_a"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-6;Malla_Antigua"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Modulo_6 -->
+
+    <Class rdf:about="&untitled-ontology-6;Modulo_6">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Malla_Antigua"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-6;pertenece_a"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-6;Malla_Antigua"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Modulo_7 -->
+
+    <Class rdf:about="&untitled-ontology-6;Modulo_7">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Malla_Antigua"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-6;pertenece_a"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-6;Malla_Antigua"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Modulo_8 -->
+
+    <Class rdf:about="&untitled-ontology-6;Modulo_8">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Malla_Antigua"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Modulo_9 -->
+
+    <Class rdf:about="&untitled-ontology-6;Modulo_9">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Malla_Antigua"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-6;pertenece_a"/>
+                <allValuesFrom rdf:resource="&untitled-ontology-6;Malla_Antigua"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Sistemas -->
+
+    <Class rdf:about="&untitled-ontology-6;Sistemas">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-6;Carreras"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#UNL -->
+
+    <Class rdf:about="&untitled-ontology-6;UNL"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Control_asistido_por_computadores -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-6;Control_asistido_por_computadores">
+        <rdf:type rdf:resource="&untitled-ontology-6;Materia10.1"/>
+        <untitled-ontology-6:es_impartida_por rdf:resource="&untitled-ontology-6;Franco_Salcedo"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Edgar_Tuza -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-6;Edgar_Tuza">
+        <rdf:type rdf:resource="&untitled-ontology-6;Estudiante10"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Elivar_Largo -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-6;Elivar_Largo">
+        <rdf:type rdf:resource="&untitled-ontology-6;Estudiante10"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Etica_profesional -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-6;Etica_profesional">
+        <rdf:type rdf:resource="&untitled-ontology-6;Materia10.3"/>
+        <untitled-ontology-6:es_impartida_por rdf:resource="&untitled-ontology-6;Pablo_Ordoniez"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Franco_Salcedo -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-6;Franco_Salcedo">
+        <rdf:type rdf:resource="&untitled-ontology-6;Docentes"/>
+        <untitled-ontology-6:imparte rdf:resource="&untitled-ontology-6;Control_asistido_por_computadores"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Henrry_Paz -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-6;Henrry_Paz">
+        <rdf:type rdf:resource="&untitled-ontology-6;Docentes"/>
+        <untitled-ontology-6:imparte rdf:resource="&untitled-ontology-6;Inteligencia_artificial"/>
+        <untitled-ontology-6:imparte rdf:resource="&untitled-ontology-6;Proyecto_fin_de_carrera"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Inteligencia_artificial -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-6;Inteligencia_artificial">
+        <rdf:type rdf:resource="&untitled-ontology-6;Materia10.2"/>
+        <untitled-ontology-6:es_impartida_por rdf:resource="&untitled-ontology-6;Henrry_Paz"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Pablo_Ordoniez -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-6;Pablo_Ordoniez">
+        <rdf:type rdf:resource="&untitled-ontology-6;Docentes"/>
+        <untitled-ontology-6:imparte rdf:resource="&untitled-ontology-6;Etica_profesional"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Proyecto_fin_de_carrera -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-6;Proyecto_fin_de_carrera">
+        <rdf:type rdf:resource="&untitled-ontology-6;Materia10.4"/>
+        <untitled-ontology-6:es_impartida_por rdf:resource="&untitled-ontology-6;Henrry_Paz"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Richar_Leon -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-6;Richar_Leon">
+        <rdf:type rdf:resource="&untitled-ontology-6;Estudiante10"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Roberto_Jacome -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-6;Roberto_Jacome">
+        <rdf:type rdf:resource="&untitled-ontology-6;Docentes"/>
+        <untitled-ontology-6:imparte rdf:resource="&untitled-ontology-6;Simulacion"/>
+        <untitled-ontology-6:imparte rdf:resource="&untitled-ontology-6;Sistemas_expertos"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Simulacion -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-6;Simulacion">
+        <rdf:type rdf:resource="&untitled-ontology-6;Materia10.5"/>
+        <untitled-ontology-6:es_impartida_por rdf:resource="&untitled-ontology-6;Roberto_Jacome"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Sistemas_expertos -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-6;Sistemas_expertos">
+        <rdf:type rdf:resource="&untitled-ontology-6;Materia10.6"/>
+        <untitled-ontology-6:es_impartida_por rdf:resource="&untitled-ontology-6;Roberto_Jacome"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#X1 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-6;X1">
+        <rdf:type rdf:resource="&untitled-ontology-6;Estudiante1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#X2 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-6;X2">
+        <rdf:type rdf:resource="&untitled-ontology-6;Estudiante1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#X3 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-6;X3">
+        <rdf:type rdf:resource="&untitled-ontology-6;Estudiante1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Y1 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-6;Y1">
+        <rdf:type rdf:resource="&untitled-ontology-6;Estudiante2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Y2 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-6;Y2">
+        <rdf:type rdf:resource="&untitled-ontology-6;Estudiante2"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mricharleon/ontologies/2014/5/untitled-ontology-6#Y3 -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-6;Y3">
+        <rdf:type rdf:resource="&untitled-ontology-6;Estudiante2"/>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+
